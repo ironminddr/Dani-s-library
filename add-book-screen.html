@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <div class="header">
+        <h1>Dani´s library</h1>
+    </div>
+
+</head>
+
+
+
+<body>
+    <div class="addBookDiv">
+        <div class="inputDataDiv">
+            <br>
+            <label>
+                Title<br>
+                <input class="textInput" name="title" id="title" />
+            </label>
+            <br>
+            <label>
+                Author<br>
+                <input class="textInput" name="author" id="author" />
+            </label>
+            <br>
+            <label>
+                Number of pages<br>
+                <input class="textInput" type="number" name="numberOfPages" id="numberOfPages" />
+            </label>
+            <br>
+            <label>
+                Readed
+                <input type="checkbox" name="readed" id="readed" />
+            </label>
+            <br>
+            <button class="addBookButton"
+                onclick="addBookToLibrary(document.getElementById('author').value,document.getElementById('title').value,document.getElementById('numberOfPages').value,document.getElementById('readed').checked)">Add
+                book</button>
+            <br>
+            <button class="goToHomePageButton" onclick="goToHomePage()">Go to home page</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

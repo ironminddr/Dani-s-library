@@ -1,0 +1,146 @@
+.fab-container {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.iconbutton {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #1abc9c;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.button {
+    width: 60px;
+    height: 60px;
+
+}
+
+.iconbutton i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+
+.header {
+    padding: 10px;
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+    font-size: 20px;
+}
+
+.column {
+    border-radius: 5px;
+    float: left;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    -webkit-box-shadow: 0px 19px 41px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 19px 41px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 19px 41px -4px rgba(0, 0, 0, 0.75);
+}
+
+#booksDiv:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#booksDiv {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 100% !important;
+    }
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.delete {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: large;
+    background-color: red;
+    font-weight: 900;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+}
+
+.addBookDiv {
+    font-family: arial;
+    font-size: 24px;
+
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.inputDataDiv {
+    border-radius: 10px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 30px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 19px 41px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 19px 41px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 19px 41px -4px rgba(0, 0, 0, 0.75);
+
+}
+
+.textInput {
+    width: 100%;
+    height: 30px;
+    font-size: medium;
+}
+
+.addBookButton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: large;
+    background-color: #1abc9c;
+    font-weight: 900;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+}
+
+.goToHomePageButton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: large;
+    background-color: aquamarine;
+    font-weight: 900;
+    border: 0px;
+    border-radius: 10px;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
